@@ -1,0 +1,170 @@
+:root {
+    --bg-color: #1e1e1e;
+    --text-color: #d8d8d8;
+    --accent-color: #7a7a7a;
+    --accent-color2: #4d4d4d;
+    --secondary-color: #969696;
+    --card-bg: #272727;
+    --code-bg: #272727;
+    --code-text: #e0e0e0;
+    --code-comment: #8a8a8a;
+    --code-keyword: #a9a9a9;
+    --code-function: #c0c0c0;
+    --code-string: #b0b0b0;
+}
+
+body {
+    font-family: "Georgia"; 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    max-width: 120px;
+    margin: 0 auto 0;
+    display: block;
+}
+
+h1 {
+    font-family: "Georgia";
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.author {
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-top: -0.5rem;
+}
+
+.section {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.section:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 1rem auto;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+pre {
+    background-color: var(--code-bg);
+    border-radius: 4px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 2rem 0;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+h1, h2 {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 1rem;
+}
+
+blockquote {
+    border-left: 3px solid #4d4d4d;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+.publication-date {
+    color: var(--secondary-color);
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.logo {
+    max-width: 120px;
+    margin: 0 auto 0.5rem;
+    display: block;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.2rem;
+}
+
+.subtitle {
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-top: -0.5rem;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post-card {
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-color2);
+}
+
+.post-title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.post-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+}
